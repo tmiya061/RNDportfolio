@@ -1,0 +1,97 @@
+.main {
+  @extend .content-width;
+  margin: auto;
+  min-height: 100vh;
+  padding: 120px 0 80px 0;
+  @include flex(center, center, column);
+
+  &__imgWrapper {
+    margin-bottom: 30px;
+    width: 65vw;
+    flex-basis: 40%;
+  }
+  &__img {
+    @extend .mb-sm;
+    margin: auto;
+  }
+  &__txtWrapper {
+    margin-bottom: 25px;
+    text-align: center;
+    flex-basis: 80%;
+    font-weight: bold;
+  }
+  &__txtInner {
+    @extend .mb-sm;
+  }
+  &__greet {
+    font-size: 20px;
+  }
+  &__cont {
+    font-size: 22px;
+  }
+  &__aboutBtn {
+    margin-right: 10px;
+  }
+
+  &__txt {
+    &_red {
+      color: $cRed;
+    }
+    &_xl {
+      @extend .font-xl;
+    }
+  }
+}
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+@media (min-width: 960px) {
+  .main {
+    @include flex(space-between, center, row-reverse);
+    &__imgWrapper {
+      flex-basis: 45%;
+      height: 50vh;
+      position: relative;
+      margin-bottom: 0;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      // object-fit: cover;
+    }
+
+    &__txtWrapper {
+      text-align: start;
+      flex-basis: 55%;
+    }
+    &__cont {
+      margin-bottom: 50px;
+    }
+    &__greet {
+      font-size: 17px;
+      margin: 0;
+    }
+    &__ttl {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 5%;
+    &__imgWrapper {
+      height: 70vh;
+    }
+    &__ttl {
+      letter-spacing: -2px;
+    }
+  }
+}

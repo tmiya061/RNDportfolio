@@ -1,0 +1,30 @@
+.portfolio {
+  @extend .content-width;
+  text-align: center;
+  padding-top: 100px;
+  &__ttl {
+    font-size: 50px;
+  }
+  &__projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__project {
+    flex-basis: 45%;
+    min-width: 200px;
+  }
+}
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+// @media (min-width: 960px) {
+// }
+
+// @media (min-width: 1280px) {
+
+// }

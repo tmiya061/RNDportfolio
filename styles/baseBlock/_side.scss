@@ -1,0 +1,85 @@
+.side {
+  display: none;
+  position: fixed;
+  top: 105%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in;
+  font-size: 2px;
+  z-index: 10;
+  &__line {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    height: 2px;
+    width: 180px;
+  }
+  & .tween-animate-title {
+    // color: $cBlack;
+    text-decoration: none !important;
+    margin: 0 40px;
+    vertical-align: middle;
+    letter-spacing: 2px;
+  }
+
+  &.left {
+    // left: -50px;
+    left: 50px;
+
+    // &.inview {
+    //   left: 50px;
+    // }
+
+    & .side__inner {
+      transform-origin: top left;
+      transform: rotate(-90deg);
+      position: relative;
+    }
+  }
+  &.right {
+    // right: -50px;
+    right: 50px;
+
+    // &.inview {
+    //   right: 50px;
+    // }
+  }
+  & .side__inner {
+    transform-origin: top right;
+    transform: rotate(90deg);
+  }
+  &__icon {
+    margin-left: 5px;
+    font-size: 25px;
+    transition: all 0.5s;
+    &:hover {
+      color: $cRed;
+    }
+    &_facebook {
+      margin-left: 15px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $cRed;
+    }
+  }
+}
+.sideIcon {
+  width: 50px;
+  vertical-align: -90%;
+  transform: rotate(90deg);
+}
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+// @media (min-width: 960px) {
+// }
+
+// @media (min-width: 1280px) {
+
+// }

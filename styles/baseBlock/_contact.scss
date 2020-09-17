@@ -1,0 +1,79 @@
+.contact {
+  min-height: 100vh;
+  @include flex(center, center, column);
+  @extend .content-width;
+  margin: 100px auto;
+
+  &__direct {
+    @include flex(center, center, column);
+  }
+  &__formWrapper {
+    margin-bottom: 60px;
+    & h2 {
+      @extend .font-xl;
+    }
+  }
+
+  &__head {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__form {
+    @include flex(center, start, column);
+  }
+  &__phone {
+    @extend .mb-sm;
+  }
+  &__submit {
+    align-self: flex-end;
+    font-size: 14px;
+  }
+
+  &__input {
+    @extend .mb-sm;
+    &:focus {
+      outline: none;
+      // outline-color: $cWhite;
+      box-shadow: 0 0 0 0.2rem rgba(0, 58, 119, 0.5);
+    }
+  }
+  &__textarea {
+    @extend .mb-sm;
+    height: 150px;
+    &:focus {
+      outline: none;
+      // outline-color: $cWhite;
+      box-shadow: 0 0 0 0.2rem rgba(0, 58, 119, 0.5);
+    }
+  }
+  &__card {
+    margin-bottom: 40px;
+  }
+  &__detail a {
+    text-decoration: none;
+  }
+}
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+@media (min-width: 960px) {
+  .contact {
+    @include flex(space-between, center, row);
+    margin: 0 auto;
+    &__formWrapper {
+      margin-right: 4rem;
+      flex-basis: 60%;
+    }
+    &__detail {
+      flex-basis: 40%;
+    }
+  }
+}
+
+// @media (min-width: 1280px) {
+
+// }

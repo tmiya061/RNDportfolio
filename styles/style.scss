@@ -1,0 +1,80 @@
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/appear";
+@import "modules/button";
+@import "modules/hero-slider";
+@import "modules/text-animation";
+@import "modules/image-slide";
+// @import "modules/mobile-menu";
+@import "modules/scroll-bar";
+@import "modules/modal";
+
+@import "baseBlock/contact";
+@import "baseBlock/skill";
+@import "baseBlock/side";
+@import "baseBlock/about";
+@import "baseBlock/footer";
+@import "baseBlock/menuBar";
+@import "baseBlock/main";
+@import "baseBlock/skillBox";
+@import "baseBlock/card";
+@import "baseBlock/sns";
+@import "baseBlock/tab";
+@import "baseBlock/tabProject";
+
+@import "breakpoints/base";
+
+
+// @import "baseBlock/portfolio";
+// @import "baseBlock/project";
+
+@media (min-width: 480px) {
+  @import "breakpoints/480up";
+}
+
+@media (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+@media (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  @import "breakpoints/2x";
+}
+
+@media print {
+  @import "breakpoints/print";
+}
+
+// @import "breakpoints/base";    //スマホ
+
+// @media (min-width: 480px) {　　　　　///スマホ横向き
+//   @import "breakpoints/480up";
+// }
+
+// @media (min-width: 600px) {       ///タブレット
+//   @import "breakpoints/600up";
+// }
+
+// @media (min-width: 960px) {    ///タブレットか小さいPC
+//   @import "breakpoints/960up";
+// }
+
+// @media (min-width: 1280px) {     ////通常のPC
+//   @import "breakpoints/1280up";
+// }
+
+// @media (min-resolution: 192dpi)   /////Retinaディスプレイ
+//       ,(-webkit-min-device-pixel-ratio: 2) {
+//   @import "breakpoints/2x";
+// }
+
+// @media print {                   ////印刷時に適用
+//   @import "breakpoints/print";
+// }

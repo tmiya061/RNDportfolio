@@ -1,0 +1,65 @@
+.menuBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+
+  height: $navHeight;
+
+  &__inner {
+    @include flex(space-between, center, row);
+    // flex-wrap: wrap;
+    @extend .content-width;
+    position: relative;
+  }
+  &__logo {
+    font-weight: bold;
+    // @extend .font-lr;
+    font-size: 20px;
+    flex-grow: 2;
+    text-align: left;
+
+    &_red {
+      color: $cRed;
+    }
+    &_white {
+      color: $cWhite;
+    }
+  }
+  &__headerNav {
+    flex-grow: 1;
+  }
+  & nav {
+    display: none;
+  }
+
+  &.triggered {
+    box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    padding: 5px 0;
+    background-color: $cBlue;
+  }
+}
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+@media (min-width: 960px) {
+  .menuBar {
+    padding-top: 5px;
+    & nav {
+      display: block;
+    }
+  }
+}
+
+// @media (min-width: 1280px) {
+
+// }

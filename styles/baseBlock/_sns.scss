@@ -1,0 +1,81 @@
+.sns {
+  &__ttl {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+  }
+  & a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $cWhite;
+    border-radius: 50%;
+    transition: all 0.5s;
+    text-align: center;
+    &:hover {
+      background-color: $cRed;
+    }
+  }
+  &__icon {
+    color: $cBlue;
+    line-height: 40px;
+    width: 40px;
+    font-size: 20px;
+    transition: all 0.5s;
+    &:hover {
+      color: $cWhite;
+    }
+  }
+}
+
+// &::before {
+//   color: $cBlue;
+//   font-family: "Font Awesome 5 Free";
+//   font-weight: 600;
+//   font-size: 15px;
+//   transition: all 0.7s;
+//   line-height: 40px;
+// }
+// &_line {
+//   &::before {
+//     content: "\f095";
+//   }
+// }
+// &_instagram {
+//   &::before {
+//     content: "\f16d";
+//   }
+// }
+// &_github {
+//   &::before {
+//     content: "\f09b";
+//   }
+// }
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+@media (min-width: 960px) {
+  .sns {
+    &__icons {
+      margin-right: 0;
+    }
+    &__ttl {
+      text-align: end;
+    }
+  }
+  
+}
+
+// @media (min-width: 1280px) {
+
+// }

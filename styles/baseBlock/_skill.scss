@@ -1,0 +1,54 @@
+.skill {
+  background-color: rgb(13, 34, 68);
+  padding: 70px 0 70px 0;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    // @extend .content-width;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__ttl {
+    text-align: center;
+    @extend .font-xl;
+  }
+  &__cont {
+    text-align: center;
+    @extend .mb-sm;
+  }
+  &__btnWrapper {
+    text-align: center;
+  }
+  &__btn {
+    left: 50px;
+  }
+  &__skillBox {
+    @extend .mb-sm;
+  }
+}
+
+// @media (min-width: 480px) {
+// }
+
+// @media (min-width: 600px) {
+// }
+
+@media (min-width: 960px) {
+  .skill {
+    &__skillBoxes {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__skillBox {
+      flex-basis: 48%;
+    }
+    &__ttl {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// @media (min-width: 1280px) {
+
+// }

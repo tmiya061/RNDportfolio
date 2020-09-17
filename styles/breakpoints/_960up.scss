@@ -1,0 +1,45 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 25px;
+}
+.font-lr {
+  font-size: 30px;
+}
+.font-lg {
+  font-size: 36px;
+}
+.font-xl {
+  font-size: 47px;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  // max-width: $contentMaxWidth;
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+
+
+.input {
+  width: 100%;
+}
+
+

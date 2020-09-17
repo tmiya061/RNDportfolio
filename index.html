@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <title>RND | Web designer, Front-end Enginner</title>
+    <meta name="description" content="RND|Web designer, Front-end Enginner" />
+    <link rel="icon" href="./images/logo.svg" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <script src="scripts/vendors/pace.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <!-- <link rel="stylesheet" href="styles/vendors/swiper.min.css" /> -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="global-container">
+      <div id="container">
+        <!-- <div class="mobile-menu__cover"></div> -->
+        <div class="navTrigger"></div>
+        <header class="header" id="home">
+          <div class="menuBar">
+            <div class="menuBar__inner">
+              <div id="logo" class="menuBar__logo">
+                <a href="#home"
+                  ><span class="menuBar__logo_white"
+                    >&lt;/
+                    <span class="menuBar__logo_red">RND</span>
+                    <span class="menuBar__logo_white">&gt;</span>
+                  </span>
+                  <!-- <h1 class="">RND</h1> -->
+                </a>
+              </div>
+              <nav class="menuBar__headerNav headerNav">
+                <ul class="headerNav__ul">
+                  <li><a class="headerNav__li" href="#home">Home</a></li>
+                  <li><a class="headerNav__li" href="#about">About</a></li>
+                  <li>
+                    <a class="headerNav__li" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li><a class="headerNav__li" href="#contact">Contact</a></li>
+                  <!-- <a href="./portfolio/index.html"
+                    ><button class="headerNav__btn btn">Portfolio</button></a
+                  > -->
+                </ul>
+              </nav>
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+              </div>
+              <!-- <button class="mobile-menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button> -->
+            </div>
+          </div>
+        </header>
+        <div class="contentWrapper">
+          <aside class="side left">
+            <div class="side__inner">
+              <span class="side__line side__line_left"></span>
+              <a href="">
+                <i class="side__icon sideIcon fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/takuro.061">
+                <i
+                  class="side__icon side__icon_facebook sideIcon fab fa-line"
+                ></i
+              ></a>
+              <a href="">
+                <i
+                  class="side__icon side__icon_facebook sideIcon fab fa-instagram"
+                ></i
+              ></a>
+
+              <!-- <img class="side__icon sideIcon" src="./images/twitter.svg" /> -->
+              <!-- <img class="side__icon sideIcon" src="./images/LINE.svg" /> -->
+              <!-- <a class="twitter icon" href="#">Twitter</a>
+              <a class="fb icon" href="#">Facebook</a> -->
+            </div>
+          </aside>
+          <div class="main">
+            <div class="main__imgWrapper">
+              <img class="main__img" src="./images/SVG/hero.svg" alt="macPC" />
+            </div>
+            <div class="main__txtWrapper">
+              <div class="main__txtInner">
+                <p class="main__greet main__txt_white">Hi There</p>
+                <p class="main__ttl main__txt_xl">
+                  <span class="main__txt_white">I'm</span>
+                  <span class="main__txt_red"> Takuro&nbsp;Miyagawa</span>
+                </p>
+                <p class="main__cont main__txt_white main__txt_md">
+                  I am Front-end Enginner
+                </p>
+              </div>
+              <div class="main__btnWrapper">
+                <button class="main__aboutBtn btn radius radius_blue">
+                  About
+                </button>
+                <button class="main__contactMeBtn btn radius radius_red">
+                  Contact me
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /.main//////////////////////////////////////////////////////////////////////////// -->
+
+          <section class="about" id="about">
+            <div class="about__inner">
+              <div class="about__img">
+                <img
+                  src="./images/man-814171_1280.jpg"
+                  class="about__imgInner"
+                />
+              </div>
+              <div class="about__txtWrapper">
+                <div class="about__me">
+                  <h2 class="about__me_ttl tween-animate-title">About Me</h2>
+                  <p class="about__meCont">
+                    初めまして。フリーランスでWebサイト制作をさせていただいております。密にコミュニケーションを取り合えるパートナーとして、デザインからコーディングまで、Webサイト制作に関わること全般を承っております。まずはお気軽にご連絡頂ければ幸いです。
+                  </p>
+                </div>
+
+                <div class="about__tab tab">
+                  <input
+                    class="tab__input"
+                    id="programming"
+                    type="radio"
+                    name="tab__item"
+                    checked
+                  />
+                  <label class="tab__item" for="programming">
+                    <h3 class="tab__ttl">
+                      Design<i class="tab__ttl_icon fas fa-pen-nib"></i></h3
+                  ></label>
+                  <input
+                    class="tab__input"
+                    id="design"
+                    type="radio"
+                    name="tab__item"
+                  />
+                  <label class="tab__item" for="design">
+                    <h3>
+                      Coding<i class="tab__ttl tab__ttl_icon fas fa-code"></i>
+                      <div class="tab__conceptLine"></div></h3
+                  ></label>
+                  <div class="tab__cont" id="programming__content">
+                    <div>
+                      <p class="tab__txt">
+                        伝えたいことはなにか どんなアクションを期待するのか
+                        どんな印象を持って欲しいのか
+                        これらの目的を明確にし、十分な話し合いの上
+                        期待する効果が出るよう、丁寧にデザイン致します。
+                        Photoshop, Illustratorを駆使した画像加工・合成 や
+                        グラフィックデザインにも対応しております。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab__cont" id="design__content">
+                    <div>
+                      <p class="tab__txt">
+                        HTML, CSS, JavaScript, React, Node.js, TypeScript
+                        これらの技術を駆使し、デザインを元に
+                        スマートフォンとPC両方を重要と考え 制作いたします。
+                        効果的なエフェクトやアニメーション
+                        を駆使し、よりよいWebサイトになるようコーディング致します。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="side right">
+              <div class="side__inner">
+                <a class="side__link" href="mailto:rndd061@gmail.com"
+                  ><span class="tween-animate-title"
+                    >Contact : rndd061@gmail.com</span
+                  ></a
+                >
+                <span class="side__line"></span>
+              </div>
+            </aside>
+          </section>
+
+          <section class="skill" id="portfolio">
+            <div class="skill__inner">
+              <h2 class="skill__ttl tween-animate-title">Portfolio</h2>
+
+              <div class="skill__tab tabProject">
+                <input
+                  class="tabProject__input"
+                  id="all"
+                  type="radio"
+                  name="tabProject__item"
+                  checked
+                />
+                <label class="tabProject__item tabProject__item_all" for="all">
+                  <h3 class="tabProject__ttl">All</h3></label
+                >
+                <input
+                  class="tabProject__input"
+                  id="web"
+                  type="radio"
+                  name="tabProject__item"
+                />
+                <label class="tabProject__item tabProject__item_web" for="web">
+                  <h3>
+                    Web
+                    <div class="tabProject__conceptLine"></div></h3
+                ></label>
+                <input
+                  class="tabProject__input"
+                  id="graphic"
+                  type="radio"
+                  name="tabProject__item"
+                />
+                <label
+                  class="tabProject__item tabProject__item_graphic"
+                  for="graphic"
+                >
+                  <h3 class="tabProject__ttl">Graphic</h3></label
+                >
+                <input
+                  class="tabProject__input"
+                  id="retouch"
+                  type="radio"
+                  name="tabProject__item"
+                />
+                <label
+                  class="tabProject__item tabProject__item_retouch"
+                  for="retouch"
+                >
+                  <h3>
+                    Retouch
+                    <div class="tabProject__conceptLine"></div></h3
+                ></label>
+                <input
+                  class="tabProject__input"
+                  id="visual"
+                  type="radio"
+                  name="tabProject__item"
+                />
+                <label
+                  class="tabProject__item tabProject__item_visual"
+                  for="visual"
+                >
+                  <h3 class="tabProject__ttl">Visual</h3></label
+                >
+
+                <!-- /.all//////////////////////////////////////////////////////////////////////////// -->
+                <div class="tabProject__cont" id="all__content">
+                  <div class="skill__skillBoxes">
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <div class="cover-slide hover-darken">
+                          <img
+                            class="bg-img-zoom img-bg50 skillBox__img"
+                            src="./images/web/travel-site.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Travel Site</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/Graphic-design/vangreedSticker.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">ステッカーデザイン</h3>
+                        <p class="skillBox__cont">
+                          ヴィンテージ風ステッカーデザインです。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/retouch/skin-retouch.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">肌修正・パーツ補正</h3>
+                        <p class="skillBox__cont">
+                          ぼかさず、黄金比を意識した自然な修正を追求しました。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/planet-boy.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Planet Fishing</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill__btnWrapper" id="PlagOpen1">
+                    <a
+                      class="skill__btn skill__btn_open"
+                      href=""
+                      title="続きを読む"
+                      onclick="showPlagin(1);return false;"
+                      ><button class="btn radius radius_red">
+                        View More
+                      </button></a
+                    >
+                  </div>
+
+                  <div
+                    class="skill__btnWrapper close"
+                    id="PlagClose1"
+                    style="display: none"
+                  >
+                    <p>
+                      <a
+                        class="skill__btn skill__btn skill__btn_close"
+                        href=""
+                        title="折りたたむ"
+                        onclick="showPlagin(1);return false;"
+                        ><button class="btn radius radius_red">
+                          View Less
+                        </button></a
+                      >
+                    </p>
+
+                    <!-- 記事内容始まり -->
+
+                    <div class="skill__skillBoxes">
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/Graphic-design/poster.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">旨辛フェアポスター</h3>
+                          <p class="skillBox__cont">
+                            手書き文字はiPadにて制作しております。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/Graphic-design/menu.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">Drink Menu</h3>
+                          <p class="skillBox__cont">
+                            手書き文字はiPadにて制作しております。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/Graphic-design/stump.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">Hand Lettering</h3>
+                          <p class="skillBox__cont">
+                            手書き文字はiPadにて制作しております。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/visual/city-reinado.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">City</h3>
+                          <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/visual/poster-girl.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">City</h3>
+                          <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/visual/ocean-scal.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">City</h3>
+                          <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/visual/boyandgirl.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">City</h3>
+                          <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                        </div>
+                      </div>
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img
+                            class="skillBox__img"
+                            src="./images/visual/forest-bear.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">City</h3>
+                          <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 記事内容終わり -->
+                  </div>
+                </div>
+                <!-- /.Web//////////////////////////////////////////////////////////////////////////// -->
+
+                <div class="tabProject__cont" id="web__content">
+                  <div class="skill__skillBoxes">
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <div class="cover-slide hover-darken">
+                          <div
+                            class="bg-img-zoom img-bg50 skillBox__img"
+                            src="travel-site.png"
+                            style="
+                              background-image: url(./images/travel-site.png);
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Travel Site</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <div class="cover-slide hover-darken">
+                          <img
+                            class="bg-img-zoom img-bg50 skillBox__img"
+                            src="./images/web/travel-site.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Travel Site</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.graphic//////////////////////////////////////////////////////////////////////////// -->
+                <div class="tabProject__cont" id="graphic__content">
+                  <div class="skill__skillBoxes">
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/Graphic-design/vangreedSticker.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">ステッカーデザイン</h3>
+                        <p class="skillBox__cont">
+                          ヴィンテージ風ステッカーデザインです。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/Graphic-design/poster.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">旨辛フェアポスター</h3>
+                        <p class="skillBox__cont">
+                          手書き文字はiPadにて制作しております。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/Graphic-design/menu.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Drink Menu</h3>
+                        <p class="skillBox__cont">
+                          手書き文字はiPadにて制作しております。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/Graphic-design/stump.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Hand Lettering</h3>
+                        <p class="skillBox__cont">
+                          手書き文字はiPadにて制作しております。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.retouch//////////////////////////////////////////////////////////////////////////// -->
+                <div class="tabProject__cont" id="retouch__content">
+                  <div class="skill__skillBoxes">
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/retouch/before.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Before</h3>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/retouch/after.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">After</h3>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/retouch/skin-retouch.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">肌修正・パーツ補正</h3>
+                        <p class="skillBox__cont">
+                          ぼかさず、黄金比を意識した自然な修正を追求しました。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.visual//////////////////////////////////////////////////////////////////////////// -->
+                <div class="tabProject__cont" id="visual__content">
+                  <div class="skill__skillBoxes">
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/planet-boy.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">Planet Fishing</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/city-reinado.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">City</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/poster-girl.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">City</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/ocean-scal.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">City</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/boyandgirl.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">City</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+
+                    <div class="skill__skillBox skillBox">
+                      <div class="skillBox__imgWrapper">
+                        <img
+                          class="skillBox__img"
+                          src="./images/visual/forest-bear.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="skillBox__txt">
+                        <h3 class="skillBox__ttl">City</h3>
+                        <p class="skillBox__cont">HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="contact" id="contact">
+            <div class="contact__formWrapper">
+              <h2 class="tween-animate-title">Contact Me</h2>
+              <form
+                name="contact"
+                action=""
+                class="contact__form"
+                method="post"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <h3 class="contact__head">Send Me Anything</h3>
+                <input
+                  type="text"
+                  required
+                  placeholder="Name"
+                  class="contact__input input"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Email Address"
+                  class="contact__input input"
+                  name="email"
+                  id="email"
+                  autocomplete="off"
+                />
+                <textarea
+                  required
+                  placeholder="Your Message"
+                  class="contact__textarea input"
+                  name="message"
+                  id="message"
+                  autocomplete="off"
+                ></textarea>
+                <button
+                  class="contact__submit btn radius radius_red"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__cards">
+                <a href="tel:090-3921-0374"
+                  ><div class="contact__card card">
+                    <i class="card__icon fas fa-phone-alt"></i>
+                    <p class="card__cont">090-3921-0374</p>
+                  </div></a
+                >
+                <a href="mailto:rndd061@gmail.com"
+                  ><div class="contact__card card">
+                    <i class="card__icon fas fa-envelope"></i>
+                    <p class="card__cont">rndd061@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+              <div class="contact__sns sns">
+                <div class="sns__ttl">Catch Me On</div>
+                <div class="sns__icons">
+                  <a
+                    href="https://www.instagram.com/takuro.061"
+                    　target="_blank"
+                    rel="noopener noreferrer"
+                    ><i
+                      class="sns__icon sns__icon_instagram fab fa-instagram"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="sns__icon sns__icon_line fab fa-line"></i
+                  ></a>
+                  <a href=""
+                    ><i class="sns__icon sns__icon_github fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="footer">
+            <a href="#home" class="footer__goUp"></a>
+            <div class="footer__cont">
+              <ul class="footer__icons">
+                <li>
+                  <a href="https://www.instagram.com/takuro.061"
+                    ><i class="footer__icon fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="footer__icon fab fa-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="footer__icon fab fa-github"></i></a>
+                </li>
+              </ul>
+              <hr class="footer__line" />
+              <div class="footer__txt">
+                <p class="footer__txt footer__txt_logo">&lt;/ RND &gt;</p>
+                <p class="footer__txt">&copy; 2020 RND</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <a href="#home"><li class="nav-link">Home</li></a>
+          <a href="#about"><li class="nav-link">About</li></a>
+          <a href="#portfolio"><li class="nav-link">Portfolio</li></a>
+          <a href="#contact"><li class="nav-link">Contact</li></a>
+        </ul>
+      </nav>
+      <div class="cursor">
+        <span class="cursor-text"></span>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/vendors/scroll-link.js"></script>
+    <script src="scripts/libs/read-more.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/vendors/modal.js"></script>
+    <!-- <script src="scripts/libs/hero-slider.js"></script> -->
+    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
