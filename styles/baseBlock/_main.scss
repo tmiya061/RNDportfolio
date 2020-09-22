@@ -37,6 +37,9 @@
     &_red {
       color: $cRed;
     }
+    &_md{
+      @extend .font-md;
+    }
     &_xl {
       @extend .font-xl;
     }

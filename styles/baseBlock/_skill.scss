@@ -5,8 +5,8 @@
   align-items: center;
 
   &__inner {
-    // @extend .content-width;
-    width: 90%;
+    @extend .content-width;
+    // width: 90%;
     margin: 0 auto;
   }
   &__ttl {

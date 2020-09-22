@@ -927,7 +927,6 @@
 }
 
 .skill__inner {
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -1016,7 +1015,7 @@
 
 .side__icon {
   margin-left: 5px;
-  font-size: 25px;
+  font-size: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1025,16 +1024,12 @@
   color: #fe3e57;
 }
 
-.side__icon_facebook {
-  margin-left: 15px;
-}
-
 .side__link:hover {
   color: #fe3e57;
 }
 
 .sideIcon {
-  width: 50px;
+  width: 40px;
   vertical-align: -90%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -1740,9 +1735,9 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1280px) {
   .tabProject {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -1766,7 +1761,7 @@ img {
   font-size: 20px;
 }
 
-.font-md {
+.font-md, .main__txt_md {
   font-size: 23px;
 }
 
@@ -1798,8 +1793,8 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .contact, .about__inner, .footer__cont, .menuBar__inner, .main {
-  width: 90%;
+.content-width, .contact, .skill__inner, .about__inner, .footer__cont, .menuBar__inner, .main {
+  width: 85%;
 }
 
 * {
@@ -2002,7 +1997,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-sm, .headerNav {
     font-size: 14px;
   }
-  .font-md {
+  .font-md, .main__txt_md {
     font-size: 25px;
   }
   .font-lr {
@@ -2020,8 +2015,8 @@ Stylesheet: 960px以上のモニタで適用
   .pb-lg {
     padding-bottom: 150px !important;
   }
-  .content-width, .contact, .about__inner, .footer__cont, .menuBar__inner, .main {
-    width: 90%;
+  .content-width, .contact, .skill__inner, .about__inner, .footer__cont, .menuBar__inner, .main {
+    width: 80%;
     margin: 0 auto;
   }
   .mobile-menu__btn {
@@ -2041,7 +2036,7 @@ Stylesheet: 1280px以上のモニタで適用
   .font-sm, .headerNav {
     font-size: 16px;
   }
-  .font-md {
+  .font-md, .main__txt_md {
     font-size: 30px;
   }
   .font-lr {
@@ -2059,7 +2054,7 @@ Stylesheet: 1280px以上のモニタで適用
   .pb-lg {
     padding-bottom: 150px !important;
   }
-  .content-width, .contact, .about__inner, .footer__cont, .menuBar__inner, .main {
+  .content-width, .contact, .skill__inner, .about__inner, .footer__cont, .menuBar__inner, .main {
     width: 70%;
     margin: 0 auto;
   }

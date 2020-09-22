@@ -58,7 +58,6 @@
     overflow: hidden;
   }
 
-
   /*ラジオボタンを全て消す*/
   & input[name="tabProject__item"] {
     display: none;
@@ -102,12 +101,14 @@
   }
 }
 
-// @media (min-width: 1280px) {
-
-// }
-
-@media (min-width: 1600px) {
+@media (min-width: 1280px) {
   .tabProject {
-    width: 80%;
+    width: 100%;
   }
 }
+
+// @media (min-width: 1600px) {
+//   .tabProject {
+//     width: 80%;
+//   }
+// }
