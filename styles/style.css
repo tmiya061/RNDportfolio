@@ -700,7 +700,6 @@
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -946,6 +945,10 @@
   left: 50px;
 }
 
+.skill__skillBox_bigScreen {
+  display: none;
+}
+
 @media (min-width: 960px) {
   .skill__skillBoxes {
     display: -webkit-box;
@@ -960,6 +963,15 @@
   }
   .skill__ttl {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1780px) {
+  .skill__skillBox_bigScreen {
+    display: block;
+  }
+  .skill__skillBox_smallScreen {
+    display: none;
   }
 }
 
@@ -1033,6 +1045,12 @@
   vertical-align: -90%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media (min-width: 1280px) {
+  .side {
+    display: block;
+  }
 }
 
 .about {
@@ -1329,7 +1347,6 @@
 }
 
 .main__txtWrapper {
-  margin-bottom: 25px;
   text-align: center;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
@@ -1409,6 +1426,9 @@
   .main__ttl {
     letter-spacing: -2px;
   }
+  .main__aboutBtn {
+    margin-right: 30px;
+  }
 }
 
 .skillBox {
@@ -1451,6 +1471,15 @@
 @media (min-width: 1280px) {
   .skillBox__img {
     height: 350px;
+  }
+}
+
+@media (min-width: 1780px) {
+  .skillBox {
+    max-width: 400px;
+  }
+  .skillBox_web {
+    max-width: initial;
   }
 }
 
@@ -2037,7 +2066,7 @@ Stylesheet: 1280px以上のモニタで適用
     font-size: 16px;
   }
   .font-md, .main__txt_md {
-    font-size: 30px;
+    font-size: 35px;
   }
   .font-lr {
     font-size: 35px;
@@ -2046,7 +2075,7 @@ Stylesheet: 1280px以上のモニタで適用
     font-size: 36px;
   }
   .font-xl, .contact__formWrapper h2, .skill__ttl, .about__me_ttl, .main__txt_xl {
-    font-size: 50px;
+    font-size: 55px;
   }
   .mb-lg {
     margin-bottom: 150px !important;
@@ -2057,9 +2086,6 @@ Stylesheet: 1280px以上のモニタで適用
   .content-width, .contact, .skill__inner, .about__inner, .footer__cont, .menuBar__inner, .main {
     width: 70%;
     margin: 0 auto;
-  }
-  .side {
-    display: block;
   }
 }
 

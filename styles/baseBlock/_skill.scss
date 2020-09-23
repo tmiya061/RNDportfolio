@@ -6,7 +6,6 @@
 
   &__inner {
     @extend .content-width;
-    // width: 90%;
     margin: 0 auto;
   }
   &__ttl {
@@ -25,6 +24,9 @@
   }
   &__skillBox {
     @extend .mb-sm;
+    &_bigScreen {
+      display: none;
+    }
   }
 }
 
@@ -52,3 +54,16 @@
 // @media (min-width: 1280px) {
 
 // }
+
+@media (min-width: 1780px) {
+  .skill {
+    &__skillBox {
+      &_bigScreen {
+        display: block;
+      }
+      &_smallScreen {
+        display: none;
+      }
+    }
+  }
+}

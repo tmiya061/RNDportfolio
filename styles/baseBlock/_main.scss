@@ -15,7 +15,6 @@
     margin: auto;
   }
   &__txtWrapper {
-    margin-bottom: 25px;
     text-align: center;
     flex-basis: 80%;
     font-weight: bold;
@@ -37,7 +36,7 @@
     &_red {
       color: $cRed;
     }
-    &_md{
+    &_md {
       @extend .font-md;
     }
     &_xl {
@@ -95,6 +94,9 @@
     }
     &__ttl {
       letter-spacing: -2px;
+    }
+    &__aboutBtn {
+      margin-right: 30px;
     }
   }
 }

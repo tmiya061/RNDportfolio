@@ -1,5 +1,6 @@
 .skillBox {
   margin: auto;
+
   &__imgWrapper {
     border-radius: 20px 20px 0 0;
     overflow: hidden;
@@ -41,12 +42,23 @@
 // }
 
 // @media (min-width: 960px) {
+//   .skillBox{
+//     max-width: 400px;
+//   }
 // }
 
 @media (min-width: 1280px) {
   .skillBox {
     &__img {
       height: 350px;
+    }
+  }
+}
+@media (min-width: 1780px) {
+  .skillBox {
+    max-width: 400px;
+    &_web {
+      max-width: initial;
     }
   }
 }
