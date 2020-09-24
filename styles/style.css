@@ -1055,7 +1055,7 @@
 
 .about {
   background-color: #0d2244;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,7 +1081,7 @@
 }
 
 .about__img {
-  height: 50vh;
+  height: 30vh;
 }
 
 .about__imgInner {

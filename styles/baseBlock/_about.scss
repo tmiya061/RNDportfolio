@@ -1,6 +1,6 @@
 .about {
   background-color: rgb(13, 34, 68);
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
 
@@ -18,7 +18,7 @@
     // object-fit: cover;
     // object-position: top;
     // size: 30%;
-    height: 50vh;
+    height: 30vh;
   }
   &__imgInner {
     width: 100%;
