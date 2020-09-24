@@ -70,11 +70,11 @@
           <aside class="side left">
             <div class="side__inner">
               <span class="side__line side__line_left"></span>
-              <a href="">
-                <i class="side__icon sideIcon fab fa-github"></i>
-              </a>
-              <a href="https://www.instagram.com/takuro.061"> <i class="side__icon side__icon_facebook sideIcon fab fa-line"></i></a>
-              <a href=""> <i class="side__icon side__icon_facebook sideIcon fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/takuro.061" target="_blank" rel="noopener noreferrer"><i class="side__icon sideIcon fab fa-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=819039210374&text" target="_blank" rel="noopener noreferrer"><i class="side__icon sideIcon fab fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/takurou.miyagawa.3/" target="_blank" rel="noopener noreferrer"><i class="side__icon sideIcon fab fa-facebook-f"></i></a>
+              <a href="https://works.do/R/ti/p/rndd@rnd" target="_blank" rel="noopener noreferrer"><i class="side__icon sideIcon fab fa-line"></i></a>
+              <a href="https://github.com/tmiya061" target="_blank" rel="noopener noreferrer"><i class="side__icon sideIcon fab fa-github"></i></a>
 
               <!-- <img class="side__icon sideIcon" src="./images/twitter.svg" /> -->
               <!-- <img class="side__icon sideIcon" src="./images/LINE.svg" /> -->
@@ -97,8 +97,8 @@
                 <span class="main__cont main__txt_white main__txt_md baffle">Front-end Enginner </span>
               </div>
               <div class="main__btnWrapper">
-                <button class="main__aboutBtn btn radius radius_blue">About</button>
-                <button class="main__contactMeBtn btn radius radius_red">Contact me</button>
+                <a  href="#portfolio"><button class="main__aboutBtn btn radius radius_blue">Portfolio</button></a>
+                <a href="#contact"><button class="main__contactMeBtn btn radius radius_red">Contact me</button></a>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@
           <section class="about" id="about">
             <div class="about__inner">
               <div class="about__img">
-                <img src="./images/man-814171_1280.jpg" class="about__imgInner" />
+                <img src="./images/SVG/aboutrMe.svg" class="about__imgInner" />
               </div>
               <div class="about__txtWrapper">
                 <div class="about__me">
@@ -187,10 +187,8 @@
                 <div class="tabProject__cont" id="all__content">
                   <div class="skill__skillBoxes">
                     <div class="skill__skillBox skillBox">
-                      <div class="skillBox__imgWrapper">
-                        <div class="cover-slide hover-darken">
-                          <img class="bg-img-zoom img-bg50 skillBox__img" src="./images/web/portfolio.jpg" alt="" />
-                        </div>
+                      <div class="skillBox__imgWrapper">                    
+                          <img class="skillBox__img" src="./images/web/portfolio.jpg" alt="" />                
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Travel Site</h3>
@@ -341,9 +339,9 @@
 
                     <div class="skill__skillBox skillBox skillBox_web">
                       <div class="skillBox__imgWrapper">
-                        <div class="cover-slide hover-darken">
-                          <img class="bg-img-zoom img-bg50 skillBox__img" src="./images/web/travel.jpg" alt="" />
-                        </div>
+                        
+                          <img class="skillBox__img" src="./images/web/travel.jpg" alt="" />
+                      
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Travel Site</h3>
@@ -352,9 +350,9 @@
                     </div>
                     <div class="skill__skillBox skillBox skillBox_web">
                       <div class="skillBox__imgWrapper">
-                        <div class="cover-slide hover-darken">
-                          <img class="bg-img-zoom img-bg50 skillBox__img" src="./images/web/portfolio.jpg" alt="" />
-                        </div>
+                        
+                          <img class="skillBox__img" src="./images/web/portfolio.jpg" alt="" />
+                     
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Travel Site</h3>
@@ -507,13 +505,13 @@
           <section class="contact" id="contact">
             <div class="contact__formWrapper">
               <h2 class="tween-animate-title">Contact Me</h2>
-              <form name="contact" action="" class="contact__form" method="post">
+              <form name="contact" action="https://formspree.io/xeqpqned" class="contact__form" method="POST">
                 <input type="hidden" name="form-name" value="contact" />
                 <h3 class="contact__head">Send Me Anything</h3>
                 <input type="text" required placeholder="Name" class="contact__input input" name="name" id="name" autocomplete="off" />
-                <input type="text" required placeholder="Email Address" class="contact__input input" name="email" id="email" autocomplete="off" />
+                <input type="email" required placeholder="Email Address" class="contact__input input" name="_replyto" id="email" autocomplete="off" />
                 <textarea required placeholder="Your Message" class="contact__textarea input" name="message" id="message" autocomplete="off"></textarea>
-                <button class="contact__submit btn radius radius_red" type="submit">Send Message</button>
+                <button class="contact__submit btn radius radius_red" value="Send" type="submit">Send Message</button>
               </form>
             </div>
             <div class="contact__detail">
@@ -534,9 +532,12 @@
               <div class="contact__sns sns">
                 <div class="sns__ttl">Catch Me On</div>
                 <div class="sns__icons">
-                  <a href="https://www.instagram.com/takuro.061" 　target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_instagram fab fa-instagram"></i></a>
-                  <a href=""><i class="sns__icon sns__icon_line fab fa-line"></i></a>
-                  <a href=""><i class="sns__icon sns__icon_github fab fa-github"></i></a>
+                  <a href="https://www.instagram.com/takuro.061" target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_instagram fab fa-instagram"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=819039210374&text" target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_line fab fa-whatsapp"></i></a>
+                  <a href="https://www.facebook.com/takurou.miyagawa.3/" target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_line fab fa-facebook-f"></i></a>
+                  <a href="https://works.do/R/ti/p/rndd@rnd" target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_line fab fa-line"></i></a>
+                  <!-- <a href="https://line.me/ti/p/TbtQtOtUNx" target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_line fab fa-line"></i></a> -->
+                  <a href="https://github.com/tmiya061" target="_blank" rel="noopener noreferrer"><i class="sns__icon sns__icon_github fab fa-github"></i></a>
                 </div>
               </div>
             </div>
@@ -548,13 +549,20 @@
             <div class="footer__cont">
               <ul class="footer__icons">
                 <li>
-                  <a href="https://www.instagram.com/takuro.061"><i class="footer__icon fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/takuro.061" target="_blank" rel="noopener noreferrer"><i class="footer__icon fab fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="footer__icon fab fa-line"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=819039210374&text" target="_blank" rel="noopener noreferrer"><i class="footer__icon fab fa-whatsapp"></i></a>
+
                 </li>
                 <li>
-                  <a href=""><i class="footer__icon fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/takurou.miyagawa.3/" target="_blank" rel="noopener noreferrer"><i class="footer__icon fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/tmiya061" target="_blank" rel="noopener noreferrer"><i class="footer__icon fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://line.me/ti/p/TbtQtOtUNx" target="_blank" rel="noopener noreferrer"><i class="footer__icon fab fa-line"></i></a>
                 </li>
               </ul>
               <hr class="footer__line" />

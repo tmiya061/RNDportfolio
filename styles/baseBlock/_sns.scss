@@ -7,7 +7,7 @@
   &__icons {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    // width: 80%;
     margin: 0 auto;
   }
   & a {
@@ -71,6 +71,15 @@
     }
     &__ttl {
       text-align: end;
+    }
+    &__icon{
+      font-size: 25px;
+      line-height: 45px;
+
+    }
+    & a{
+      width: 45px;
+      height: 45px;
     }
   }
   

@@ -17,6 +17,7 @@
   const mouseTxt = mouse.querySelector("span");
   const burger = document.querySelector(".burger");
   const divs = document.querySelectorAll("a");
+  const navbar = document.querySelector(".nav-bar");
 
   function navToggle(e) {
     if (!e.target.classList.contains("active")) {
@@ -26,6 +27,7 @@
       gsap.to("#logo", 1, { color: "black" });
       gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
       document.body.classList.add("hide");
+      navbar.classList.add("block");
     } else {
       e.target.classList.remove("active");
       gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
@@ -33,6 +35,8 @@
       gsap.to("#logo", 1, { color: "white" });
       gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
       document.body.classList.remove("hide");
+      navbar.classList.remove("block");
+
     }
   }
   function navRemove(e) {

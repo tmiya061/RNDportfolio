@@ -124,13 +124,14 @@ button {
 }
 
 .nav-bar {
+  z-index: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: white;
-  display: block;
+  display: none;
   // display: flex;
   // justify-content: space-around;
   // align-items: center;
@@ -139,6 +140,9 @@ button {
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
   color: black;
+}
+.nav-bar.block {
+  display: block;
 }
 .burger {
   position: absolute;
