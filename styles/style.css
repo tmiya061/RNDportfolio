@@ -1671,7 +1671,6 @@
   .tab__item {
     width: calc(40% / 2);
     text-align: start;
-    min-width: 120px;
   }
   .tab__cont {
     padding: 20px 40px 0 0;
