@@ -20,7 +20,7 @@ class TweenTextAnimation extends TextAnimation {
         super(el);
         this.DOM.chars = this.DOM.el.querySelectorAll('.char');
     }
-    
+
     animate() {
         this.DOM.el.classList.add('inview');
         this.DOM.chars.forEach((c, i) => {
