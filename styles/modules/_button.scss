@@ -52,6 +52,18 @@
       box-shadow: none;
     }
   }
+  &.more{
+    border-radius: 5px;
+      background-color: $cWhite;
+      border: none;
+      color: $cBlack;
+      width: 75px;
+      height: 40px;
+      line-height: 20px;
+      &:hover {
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+      }
+  }
   &.radius {
     // transition: all 0.3s;
     // display: inline-block;
@@ -71,6 +83,7 @@
       background-color: $cLightBlue;
       color: white;
     }
+
     &:hover {
       box-shadow: 5px 6px 12px 4px rgba(0, 0, 0, 0.31);
     }

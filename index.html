@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/SVG/logo1.svg" />
     <link rel="stylesheet" href="styles/loader.css" />
     <script src="scripts/vendors/pace.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -21,9 +21,9 @@
     />
     <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
     <!-- <link rel="stylesheet" href="styles/vendors/swiper.min.css" /> -->
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css?date=201102" />
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper" id="global-container">
       <div id="container">
         <!-- <div class="mobile-menu__cover"></div> -->
@@ -180,22 +180,42 @@
                 <!-- /.all//////////////////////////////////////////////////////////////////////////// -->
                 <div class="tabProject__cont" id="all__content">
                   <div class="skill__skillBoxes">
-                    <div class="skill__skillBox skillBox">
+                    <div class="skill__skillBox skillBox modal_btn" onclick="document.querySelector('.body').classList.toggle('is-fixed');">
                       <div class="skillBox__imgWrapper">
-                        <img class="skillBox__img" src="./images/web/portfolio.jpg" alt="" />
+                        <img class="skillBox__img" src="./images/web/reinado.jpg" alt="" />
                       </div>
-                      <div class="skillBox__txt">
-                        <h3 class="skillBox__ttl">Portfolio</h3>
-                        <p class="skillBox__cont">言語：HTML, CSS, JavaScript</p>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Reinado</h3>
+                          <p class="skillBox__sub">レディースアパレルブランドです。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
                       </div>
                     </div>
+                    <div class="skill__skillBox skillBox modal_btn">
+                      <div class="skillBox__imgWrapper">
+                        <img class="skillBox__img" src="./images/web/vangreed.jpg" alt="" />
+                      </div>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Van Greed</h3>
+                          <p class="skillBox__sub">メンズアパレルブランドです。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="skill__skillBox skillBox">
                       <div class="skillBox__imgWrapper">
                         <img class="skillBox__img" src="./images/Graphic-design/vangreedSticker.jpg" alt="" />
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">ステッカーデザイン</h3>
-                        <p class="skillBox__cont">VAN GREED様のヴィンテージ風ステッカーデザインです。</p>
+                        <p class="skillBox__sub">ヴィンテージ風ステッカーデザインです。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -204,25 +224,17 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">肌修正・パーツ補正</h3>
-                        <p class="skillBox__cont">ぼかさず、黄金比を意識した自然な修正を追求しました。</p>
+                        <p class="skillBox__sub">肌はぼかしを使わず自然に、顔のパーツは個性を失わない程度の黄金比に基づいたレタッチです。</p>
                       </div>
                     </div>
-                    <div class="skill__skillBox skillBox">
-                      <div class="skillBox__imgWrapper">
-                        <img class="skillBox__img" src="./images/visual/planet-boy.jpg" alt="" />
-                      </div>
-                      <div class="skillBox__txt">
-                        <h3 class="skillBox__ttl">Planet Fishing</h3>
-                        <p class="skillBox__cont">宇宙と釣りの合成制作です。</p>
-                      </div>
-                    </div>
+
                     <div class="skill__skillBox skill__skillBox_bigScreen skillBox">
                       <div class="skillBox__imgWrapper">
                         <img class="skillBox__img" src="./images/Graphic-design/poster.jpg" alt="" />
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">旨辛フェアポスター</h3>
-                        <p class="skillBox__cont">ざ・らくちん室町横丁のポスターデザインです。</p>
+                        <p class="skillBox__sub">ざ・らくちん室町横丁のポスターデザインです。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skill__skillBox_bigScreen skillBox">
@@ -231,7 +243,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Drink Menu</h3>
-                        <p class="skillBox__cont">炭火炉端イコール様のドリンクメニューを編集しました。</p>
+                        <p class="skillBox__sub">炭火炉端イコール様のドリンクメニューを編集しました。</p>
                       </div>
                     </div>
                   </div>
@@ -248,13 +260,22 @@
                     <!-- 記事内容始まり -->
 
                     <div class="skill__skillBoxes">
+                      <div class="skill__skillBox skillBox">
+                        <div class="skillBox__imgWrapper">
+                          <img class="skillBox__img" src="./images/visual/planet-boy.jpg" alt="" />
+                        </div>
+                        <div class="skillBox__txt">
+                          <h3 class="skillBox__ttl">Planet Fishing</h3>
+                          <p class="skillBox__sub">宇宙と釣りの合成制作です。</p>
+                        </div>
+                      </div>
                       <div class="skill__skillBox skill__skillBox_smallScreen skillBox">
                         <div class="skillBox__imgWrapper">
                           <img class="skillBox__img" src="./images/Graphic-design/poster.jpg" alt="" />
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">旨辛フェアポスター</h3>
-                          <p class="skillBox__cont">ざ・らくちん室町横丁のポスターデザインです。</p>
+                          <p class="skillBox__sub">ざ・らくちん室町横丁のポスターデザインです。</p>
                         </div>
                       </div>
                       <div class="skill__skillBox skill__skillBox_smallScreen skillBox">
@@ -263,16 +284,17 @@
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">Drink Menu</h3>
-                          <p class="skillBox__cont">炭火炉端イコール様のドリンクメニューを編集しました。</p>
+                          <p class="skillBox__sub">炭火炉端イコール様のドリンクメニューを編集しました。</p>
                         </div>
                       </div>
+
                       <div class="skill__skillBox skillBox">
                         <div class="skillBox__imgWrapper">
                           <img class="skillBox__img" src="./images/Graphic-design/stump.jpg" alt="" />
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">Hand Lettering</h3>
-                          <p class="skillBox__cont">手書き文字はiPadにて制作しております。</p>
+                          <p class="skillBox__sub">手書き文字はiPadにて制作しております。</p>
                         </div>
                       </div>
                       <div class="skill__skillBox skillBox">
@@ -281,7 +303,7 @@
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">City</h3>
-                          <p class="skillBox__cont">立体文字の合成を制作しました。</p>
+                          <p class="skillBox__sub">立体文字の合成を制作しました。</p>
                         </div>
                       </div>
                       <div class="skill__skillBox skillBox">
@@ -290,7 +312,7 @@
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">Planet Girl</h3>
-                          <p class="skillBox__cont">多重露光効果で制作しました。</p>
+                          <p class="skillBox__sub">多重露光効果で制作しました。</p>
                         </div>
                       </div>
                       <div class="skill__skillBox skillBox">
@@ -299,7 +321,7 @@
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">Ocean</h3>
-                          <p class="skillBox__cont">海の不思議な入り口を制作しました。</p>
+                          <p class="skillBox__sub">海の不思議な入り口を制作しました。</p>
                         </div>
                       </div>
                       <div class="skill__skillBox skillBox">
@@ -308,16 +330,7 @@
                         </div>
                         <div class="skillBox__txt">
                           <h3 class="skillBox__ttl">BoyAndGirl</h3>
-                          <p class="skillBox__cont">GTA風の画像加工です。</p>
-                        </div>
-                      </div>
-                      <div class="skill__skillBox skillBox">
-                        <div class="skillBox__imgWrapper">
-                          <img class="skillBox__img" src="./images/visual/forest-bear.jpg" alt="" />
-                        </div>
-                        <div class="skillBox__txt">
-                          <h3 class="skillBox__ttl">Bear</h3>
-                          <p class="skillBox__cont">ファンタジーな熊を作りました。</p>
+                          <p class="skillBox__sub">GTA風の画像加工です。</p>
                         </div>
                       </div>
                     </div>
@@ -330,22 +343,74 @@
 
                 <div class="tabProject__cont" id="web__content">
                   <div class="skill__skillBoxes">
-                    <div class="skill__skillBox skillBox skillBox_web">
+                    <div class="skill__skillBox skillBox modal_btn">
                       <div class="skillBox__imgWrapper">
-                        <img class="skillBox__img" src="./images/web/travel.jpg" alt="" />
+                        <img class="skillBox__img" src="./images/web/reinado.jpg" alt="" />
                       </div>
-                      <div class="skillBox__txt">
-                        <h3 class="skillBox__ttl">Travel Site</h3>
-                        <p class="skillBox__cont">言語：HTML, CSS, JavaScript</p>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Reinado</h3>
+                          <p class="skillBox__sub">レディースアパレルブランドです。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="skill__skillBox skillBox skillBox_web">
+                    <div class="skill__skillBox skillBox modal_btn">
+                      <div class="skillBox__imgWrapper">
+                        <img class="skillBox__img" src="./images/web/vangreed.jpg" alt="" />
+                      </div>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Van Greed</h3>
+                          <p class="skillBox__sub">メンズアパレルブランドです。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox modal_btn">
+                      <div class="skillBox__imgWrapper">
+                        <img class="skillBox__img" src="./images/web/hedder8.png" alt="" />
+                      </div>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Waxing Lily</h3>
+                          <p class="skillBox__sub">ブラジリアンワックス専門店です。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox modal_btn">
                       <div class="skillBox__imgWrapper">
                         <img class="skillBox__img" src="./images/web/portfolio.jpg" alt="" />
                       </div>
-                      <div class="skillBox__txt">
-                        <h3 class="skillBox__ttl">Portfolio</h3>
-                        <p class="skillBox__cont">言語：HTML, CSS, JavaScript</p>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Portfolio</h3>
+                          <p class="skillBox__sub">自身のポートフォリオです。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill__skillBox skillBox modal_btn">
+                      <div class="skillBox__imgWrapper">
+                        <img class="skillBox__img" src="./images/web/travel.jpg" alt="" />
+                      </div>
+                      <div class="skillBox__cont">
+                        <div class="skillBox__webTxt">
+                          <h3 class="skillBox__ttl">Travel Site</h3>
+                          <p class="skillBox__sub">JavaScriptの練習の際に制作しました。</p>
+                        </div>
+                        <div class="skillBox__btn">
+                          <p class="btn more">詳細</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -360,7 +425,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">ステッカーデザイン</h3>
-                        <p class="skillBox__cont">VAN GREED様のヴィンテージ風ステッカーデザインです。</p>
+                        <p class="skillBox__sub">VAN GREED様のヴィンテージ風ステッカーデザインです。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -369,7 +434,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">旨辛フェアポスター</h3>
-                        <p class="skillBox__cont">ざ・らくちん室町横丁様のポスターデザインです。</p>
+                        <p class="skillBox__sub">ざ・らくちん室町横丁様のポスターデザインです。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -378,7 +443,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Drink Menu</h3>
-                        <p class="skillBox__cont">炭火炉端イコール様のドリンクメニューを編集しました。</p>
+                        <p class="skillBox__sub">炭火炉端イコール様のドリンクメニューを編集しました。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -387,7 +452,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Hand Lettering</h3>
-                        <p class="skillBox__cont">手書き文字はiPadにて制作しております。</p>
+                        <p class="skillBox__sub">手書き文字はiPadにて制作しております。</p>
                       </div>
                     </div>
                   </div>
@@ -418,7 +483,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">肌修正・パーツ補正</h3>
-                        <p class="skillBox__cont">ぼかさず、黄金比を意識した自然な修正を追求しました。</p>
+                        <p class="skillBox__sub">ぼかさず、黄金比を意識した自然な修正を追求しました。</p>
                       </div>
                     </div>
                   </div>
@@ -433,7 +498,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Planet Fishing</h3>
-                        <p class="skillBox__cont">宇宙と釣りの合成制作です。</p>
+                        <p class="skillBox__sub">宇宙と釣りの合成制作です。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -442,7 +507,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">City</h3>
-                        <p class="skillBox__cont">立体文字の合成を制作しました。</p>
+                        <p class="skillBox__sub">立体文字の合成を制作しました。</p>
                       </div>
                     </div>
 
@@ -452,7 +517,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Planet Girl</h3>
-                        <p class="skillBox__cont">多重露光効果で制作しました。</p>
+                        <p class="skillBox__sub">多重露光効果で制作しました。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -461,7 +526,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Ocean</h3>
-                        <p class="skillBox__cont">海の不思議な入り口を制作しました。</p>
+                        <p class="skillBox__sub">海の不思議な入り口を制作しました。</p>
                       </div>
                     </div>
                     <div class="skill__skillBox skillBox">
@@ -470,7 +535,7 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">BoyAndGirl</h3>
-                        <p class="skillBox__cont">GTA風の画像加工です。</p>
+                        <p class="skillBox__sub">GTA風の画像加工です。</p>
                       </div>
                     </div>
 
@@ -480,8 +545,102 @@
                       </div>
                       <div class="skillBox__txt">
                         <h3 class="skillBox__ttl">Bear</h3>
-                        <p class="skillBox__cont">ファンタジーな熊を作りました。</p>
+                        <p class="skillBox__sub">ファンタジーな熊を作りました。</p>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal_area">
+                  <div class="modal_box">
+                    <div class="modal_bg"></div>
+                    <div class="modal_inner">
+                      <div class="modal_txt">
+                        <p>【コンセプト】</p>
+                        <p class="modal_subtxt">綺麗な高級感があるイメージのレディースアパレルブランド。
+                        <p>【メインビジュアル】</p>
+                        <p class="modal_subtxt">余白を多く使い、余裕のある洗練されたデザインを意識しました。<p>
+                        <p>【フォント】</p>
+                        <p class="modal_subtxt">招待状や卒業証書などにも用いられる、 高貴で優雅な印象のスクリプトフォントSnell Roundhandです。</p>
+                        <p>【色】</p>
+                        <p class="modal_subtxt">鮮やかな服を強調させるために背景は白、
+                        シックなイメージを連想させるように、フォントは黒を使用しました。</p>
+                      </div>
+                      <div class="modal_close">×</div>
+                      <div class="modal_block">
+                        <img src="images/web/reinado.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal_box">
+                    <div class="modal_bg"></div>
+                    <div class="modal_inner">
+                      <div class="modal_txt">
+                        <p>【コンセプト】</p>
+                        <p>安価で購入できる、無骨なメンズアメカジブランド。</p>
+                       【レイアウト】</p>
+                        目的が商品の購入であるため、シンプルで商品の探しやすさを重要としました。</p>
+                        特集されているアイテムの写真を使用し、わかりやすくお勧め商品を表示。</p>
+                        
+                        <p>【フォント】</p>
+                        <p>フォントは太くし、男らしい無骨さを表現しました。</p>
+                        <p>さらにアーチ状に表示することで、アメカジファッション感を演出しました。</p>
+                      </div>
+                      <div class="modal_block">
+                        <img src="images/web/vangreed.jpg" alt="" />
+                      </div>
+                      <div class="modal_close">×</div>
+                    </div>
+                  </div>
+                  <div class="modal_box">
+                    <div class="modal_bg"></div>
+                    <div class="modal_inner">
+                      <div class="modal_txt">
+                        <p>【コンセプト】</p>「店舗の内装に合わせた女性らしさ」</p>
+                        <p>【メインビジュアル】</p>
+                        <p>春夏と、秋冬用で分け、春夏では水着でビーチの写真を使用しました。</p>
+                        【レイアウト】</p>
+                        <p>初めての方にとって気になる「料金」と施術してもらう「スタッフ」を配置。
+                        リピーターの方も含め、最終的には予約してもらうことが重要なため、「予約」を大きく配置しました。</p>
+                        
+                        <p>【色】</p>
+                        <p>色は内装のピンク系統の色にし、落ち着いた、淡いピンクであるシェルピンクを採用しました。</p>
+                       </div>
+                      <div class="modal_block">
+                        <img src="images/web/hedder8.png" alt="" />
+                      </div>
+                      <div class="modal_close">×</div>
+                    </div>
+                  </div>
+                  <div class="modal_box">
+                    <div class="modal_bg"></div>
+                    <div class="modal_inner">
+                      <div class="modal_txt">
+                        <p>【コンセプト】</p>
+                        <p>「デザインからコーディングまでこなせるオールマイティプレイヤー」</p>
+
+                        <p>【メインビジュアル】</p>
+                        <p>Baffle.jsによって肩書きが様々変更されていき、様々なことができることを表現しました。</p>
+                        
+                        <p>【カラー】</p>
+                        <p>ITの分野でよく使われる青の彩度を少し落とした色を軸にし、落ち着きと親しみやすさを表現しました。</p>
+                        
+                        <p>【レイアウト】</p>
+                        <p>サラっと目を通すことができるように、１ページにコンテンツをまとめました。
+                        必要最低限の項目により、見て頂きたい部分に目を通して頂けるようにしました。</p>
+                      </div>
+                      <div class="modal_block">
+                        <img src="images/web/portfolio.jpg" alt="" />
+                      </div>
+                      <div class="modal_close">×</div>
+                    </div>
+                  </div>
+                  <div class="modal_box">
+                    <div class="modal_bg"></div>
+                    <div class="modal_inner">
+                      <div class="modal_block">
+                        <img src="images/web/travel.jpg" alt="" />
+                      </div>
+                      <div class="modal_close">×</div>
                     </div>
                   </div>
                 </div>
