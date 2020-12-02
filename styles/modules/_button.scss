@@ -52,17 +52,17 @@
       box-shadow: none;
     }
   }
-  &.more{
+  &.more {
     border-radius: 5px;
-      background-color: $cWhite;
-      border: none;
-      color: $cBlack;
-      width: 75px;
-      height: 40px;
-      line-height: 20px;
-      &:hover {
-        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-      }
+    background-color: $cWhite;
+    border: none;
+    color: $cBlack;
+    width: 75px;
+    height: 40px;
+    line-height: 20px;
+    &:hover {
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
   }
   &.radius {
     // transition: all 0.3s;
@@ -83,12 +83,22 @@
       background-color: $cLightBlue;
       color: white;
     }
+    &_white {
+      background-color: $cDarkWhite;
+      width: 200px;
+      height: 40px;
+      color: #0d2244;
+      font-size: 13px;
+      &:hover {
+        color: $cDarkWhite;
+        background-color: $cRed;
+      }
+    }
 
     &:hover {
       box-shadow: 5px 6px 12px 4px rgba(0, 0, 0, 0.31);
     }
   }
-
   &.slide-bg {
     position: relative;
     overflow: hidden;

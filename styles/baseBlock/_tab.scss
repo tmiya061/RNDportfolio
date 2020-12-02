@@ -32,6 +32,12 @@
       background-color: #294572;
     }
   }
+  &__btnWrapper {
+    text-align: center;
+  }
+  &__btn {
+    padding: 0;
+  }
 
   /*タブ切り替えの中身のスタイル*/
   &__cont {
@@ -78,6 +84,9 @@
     }
     &__cont {
       padding: 20px 40px 0 0;
+    }
+    &__btnWrapper {
+      text-align: left;
     }
   }
 }

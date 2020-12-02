@@ -36,7 +36,6 @@
       gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
       document.body.classList.remove("hide");
       navbar.classList.remove("block");
-
     }
   }
   function navRemove(e) {

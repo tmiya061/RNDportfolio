@@ -86,10 +86,10 @@
 }
 @media (max-width: 480px) {
   .modal_inner {
+   bottom: 0;
     padding: 0;
-  }
-  .modal_inner {
     width: 350px;
+
   }
 }
 // @media screen and (max-width: 480px) {
