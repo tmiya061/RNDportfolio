@@ -17,7 +17,7 @@
   const burger = document.querySelector(".burger");
   const divs = document.querySelectorAll("a");
   const navbar = document.querySelector(".nav-bar");
-
+//分岐
   class MobileMenu {
     constructor() {
       this.navbar = document.querySelector(".nav-bar");
