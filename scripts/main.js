@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const main = new Main();
+
 });
 
 class Main {
@@ -8,6 +9,7 @@ class Main {
     this.sides = document.querySelectorAll(".side");
     this._observers = [];
     this._init();
+
   }
 
   set observers(val) {
@@ -19,7 +21,7 @@ class Main {
   }
 
   _init() {
-    // new MobileMenu();
+    // const menua = new MobileMenu();
     // this.hero = new HeroSlider(".swiper-container");
     Pace.on("done", this._paceDone.bind(this));
   }
@@ -78,28 +80,12 @@ class Main {
   }
 
   _scrollInit() {
-    this.observers = new ScrollObserver(
-      ".navTrigger",
-      this._navAnimation.bind(this),
-      { once: false }
-    );
+    this.observers = new ScrollObserver(".navTrigger", this._navAnimation.bind(this), { once: false });
     this.observers = new ScrollObserver(".cover-slide", this._inviewAnimation);
     this.observers = new ScrollObserver(".appear", this._inviewAnimation);
-    this.observers = new ScrollObserver(
-      ".tween-animate-title",
-      this._textAnimation,
-      { rootMargin: "-200px 0px" }
-    );
-    this.observers = new ScrollObserver(
-      ".swiper-container",
-      this._toggleSlideAnimation.bind(this),
-      { once: false }
-    );
-    this.observers = new ScrollObserver(
-      "#main-content",
-      this._sideAnimation.bind(this),
-      { once: false, rootMargin: "-300px 0px" }
-    );
+    this.observers = new ScrollObserver(".tween-animate-title", this._textAnimation, { rootMargin: "-200px 0px" });
+    this.observers = new ScrollObserver(".swiper-container", this._toggleSlideAnimation.bind(this), { once: false });
+    this.observers = new ScrollObserver("#main-content", this._sideAnimation.bind(this), { once: false, rootMargin: "-300px 0px" });
 
     // this.observers = new ScrollObserver(".appear", this._inviewAnimation);
   }

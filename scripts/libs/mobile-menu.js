@@ -12,42 +12,47 @@
   //     $(".menu").toggleClass('active');
   //   })
   // });
-
   const mouse = document.querySelector(".cursor");
   const mouseTxt = mouse.querySelector("span");
   const burger = document.querySelector(".burger");
   const divs = document.querySelectorAll("a");
   const navbar = document.querySelector(".nav-bar");
 
-  function navToggle(e) {
-    if (!e.target.classList.contains("active")) {
-      e.target.classList.add("active");
-      gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "#FE3E57" });
-      gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "#FE3E57" });
-      gsap.to("#logo", 1, { color: "black" });
-      gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
-      document.body.classList.add("hide");
-      navbar.classList.add("block");
-    } else {
+  class MobileMenu {
+    constructor() {
+      this.navbar = document.querySelector(".nav-bar");
+      burger.addEventListener("click", this._navToggle);
+      divs.forEach((div) => div.addEventListener("click", this._navRemove));
+    }
+    _navToggle(e) {
+      if (!e.target.classList.contains("active")) {
+        e.target.classList.add("active");
+        gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "#FE3E57" });
+        gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "#FE3E57" });
+        gsap.to("#logo", 1, { color: "black" });
+        gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+        document.body.classList.add("hide");
+        self.navbar.classList.add("block");
+      } else {
+        e.target.classList.remove("active");
+        gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
+        gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
+        gsap.to("#logo", 1, { color: "white" });
+        gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+        document.body.classList.remove("hide");
+        self.navbar.classList.remove("block");
+      }
+    }
+    _navRemove(e) {
       e.target.classList.remove("active");
       gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
       gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
       gsap.to("#logo", 1, { color: "white" });
       gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
       document.body.classList.remove("hide");
-      navbar.classList.remove("block");
     }
   }
-  function navRemove(e) {
-    e.target.classList.remove("active");
-    gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
-    gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
-    gsap.to("#logo", 1, { color: "white" });
-    gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
-    document.body.classList.remove("hide");
-  }
-  burger.addEventListener("click", navToggle);
-  divs.forEach((div) => div.addEventListener("click", navRemove));
+  new MobileMenu();
   // window.addEventListener("mousemove", cursor);
   // window.addEventListener("mouseover", activeCursor);
 
@@ -68,5 +73,5 @@
     i++;
   };
 
-  setInterval(changeTitle, 3200);
+  setInterval(changeTitle, 3100);
 }
